@@ -19,6 +19,8 @@ import numpy as np
 import pandas as pd
 
 # YOUR CODE HERE 1 to set data
+x = np.random.rand(1000)
+y = np.dandom.rand(1000)
 
 # Check your random values
 print(data.head())
