@@ -57,12 +57,21 @@ print("Number of rows:", len(selection))
 # 
 
 # YOUR CODE HERE 3
+import matplotlib.pyplot as plt
+selection = selection.sort_index()
+plt.plot(selection.index, selection['TEMP_C'],linestyle = 'solid', c = 'black', marker = 'o',markersize = 2)
+plt.tittle = ("Helsinki-Vantaa Airport")
+plt.xlabel("Time")
+plt.ylabel("Temperature(Celsiuus)")
+plt.grid()
+plt.show()
 
 # Set output file name
-outputfp = ""
+outputfp = "temp_line_plot.png"
 
 # Save plot as image
 # YOUR CODE HERE 4
+plt.savefig('temp_line_plot.png')
 
 import os
 
